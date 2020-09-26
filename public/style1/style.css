@@ -65,7 +65,7 @@ h3::before {
   position: absolute;
   top: 30px;
   right: 30px;
-  background: white;
+  background: black;
   max-height: 150px;
 }
 
