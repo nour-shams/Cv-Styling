@@ -1,0 +1,170 @@
+body{background:white}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+header figure {
+  margin: 0px;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+  width: 100%;
+  background: grey;
+  float: left;
+  color: red;
+}
+header figure {
+  float: left;
+}
+header {
+  float: left;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  background: grey;
+  margin: 0px;
+}
+header hgroup {
+  float: left;
+  margin: 1em;
+}
+#about h3 {
+  margin: 0px;
+}
+header h2 {
+  line-height: 4em;
+}
+
+section:not(#contact) {
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding: 1em;
+  box-sizing: border-box;
+}
+#about h3 {
+  padding: 0.5em;
+}
+section > h3 {
+  border-bottom: 1px solid grey;
+}
+h3::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: red;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+#contact {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: white;
+  max-height: 150px;
+}
+
+#contact h3 {
+  display: none;
+}
+
+.contact {
+  margin: 0;
+}
+
+.contact-type,
+.contact-value {
+  display: inline-block;
+  margin: 0;
+  padding: 3px;
+}
+
+.contact-type {
+  width: 120px;
+  background: red;
+  color: white;
+}
+
+.contact-value a {
+  color: red;
+}
+.contact-value {
+  width: 400px;
+}
+dd.contact-value {
+  color: red;
+}
+
+.skill {
+  background-color: #bbbbbb;
+  width: 100%;
+  position: relative;
+}
+.skill span {
+  margin-bottom: 0.2em;
+  color: white;
+  height: 80%;
+}
+.skill[data-skill="5"] span {
+  width: 50%;
+  height: 80%;
+  display: block;
+  background-color: red;
+}
+.skill[data-skill="3"] span {
+  width: 30%;
+  height: 80%;
+  display: block;
+  background-color: red;
+}
+.skill[data-skill="1"] span {
+  width: 10%;
+  height: 80%;
+  display: block;
+  background-color: red;
+  margin-bottom: 1em;
+}
+.skill[data-skill="9"] span {
+  width: 90%;
+  display: block;
+  background-color: red;
+}
+.skill[data-skill="7"] span {
+  width: 70%;
+  display: block;
+  background-color: red;
+}
+
+.skills-primary::before {
+  content: "Main";
+}
+.skills-secondary::before {
+  content: "Other";
+}
+.experience-type {
+  color: red;
+  text-decoration-style: bold;
+}
+.experience-institution {
+  color: red;
+  font-weight: normal;
+}
+.experience-institution ::before {
+  content: "@";
+  margin-right: 5px;
+}
+.experience-date-separator {
+  color: red;
+}
+.day,
+.month,
+.year,
+.experience-location {
+  color: gray;
+  font-size: smaller;
+}
